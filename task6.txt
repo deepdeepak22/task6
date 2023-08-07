@@ -1,0 +1,105 @@
+class movie{
+    constructor(title,studio,rating){
+         this.title = title
+         this.studio = studio
+         this.rating = rating
+    }
+    displayName(){
+        console.log(this.title)
+    }
+    displayStudio(){
+        console.log(this.studio)
+    }
+    displayRating(){
+        console.log(this.rating)
+    }
+    
+}
+const movie1 = new movie("casino royale","eon productions","PG13")
+movie1.displayName()
+movie1.displayStudio()
+movie1.displayRating()
+
+
+
+________________________________________________________________________________________________________________________
+
+
+class circle{
+    constructor(radius,color,setcolor){
+        this.radius = radius
+        this.color = color
+        this.setcolor = setcolor
+    }
+    getRadius(){
+        console.log("radius is: " +this.radius)
+    }
+    getColor(){
+        console.log("color is: " +this.color)
+    }
+    setColor(){
+        console.log("set color is: "+this.setcolor)
+    }
+    getArea(){
+        console.log("area is "+3.14*this.radius*this.radius)
+    }
+    getCircumference(){
+        console.log("circumference is "+2*3.14*this.radius)
+    }
+}
+const circle1 = new circle(10,"red","red")
+circle1.getRadius()
+circle1.getColor()
+circle1.setColor()
+circle1.getArea()
+circle1.getCircumference()
+
+
+
+________________________________________________________________________________________________________________________
+
+
+class person{
+    constructor(name,address,mobile , email){
+        this.name =name
+        this.address = address
+        this.mobile = mobile
+        this.email = email
+    }
+    displayName(){
+         console.log(this.name)
+    }
+    displayAddress(){
+        console.log(this.address)
+    }
+    displayMobile(){
+        console.log(this.mobile)
+    }
+    displayEmail(){
+        console.log(this.email)
+    }
+}
+const person1 = new person("deepak" , "h.no1 mg road" ,"0000000000" , "abc@gmail.com" )
+person1.displayName()
+person1.displayAddress()
+person1.displayMobile()
+person1.displayEmail()
+
+________________________________________________________________________________________________________________________
+
+class uber{
+    constructor(distance){
+    this.distance = distance
+    }
+    distanceCalculator(){
+        if (this.distance <5){
+            console.log("the total fare is : " + this.distance*20)
+        }
+        else{
+            console.log("the total fare is: "+ parseInt(5*20 +(this.distance-5)*50))
+        }
+    }
+}
+const uber1 = new uber(10)
+uber1.distanceCalculator()
+
